@@ -1,23 +1,20 @@
 # -*- coding: utf-8 -*-
 """
-駅データSHP (data/stations_shp/tokyo_stations.shp) を読み込む。
+駅データSHP (data/stations_shp/kansai_stations.shp) を読み込む。
 
 フィールド: line_name, stn_name, seq(路線内の順番), cum_km(起点からの累積距離),
 color(路線カラー)
 
-品質チェック(check_line_quality)の結果、複数の物理系統が合流/分岐する
-路線(例: 湘南新宿ライン、上野東京ライン)は、系統をまたいで駅が
-seq/cum_kmに混線している場合がある。駅名と座標そのものは正しいので、
-"駅名 -> 座標" の引き当てとしてはどの路線でも使ってよいが、
-「その路線のseq/cum_kmの並び順をそのまま信用してよいか」は
-check_line_quality() の結果で必ず確認すること。
-route_builder.py はこの理由から、駅の並び順を各路線のconfig
-(configs/*.json の stations 配列の並び)側で明示的に指定させる設計にしている。
+品質チェック(check_line_quality)の結果、関西40路線はいずれもseq/cum_kmの
+並び順に問題は見つかっていない。唯一の例外は大阪環状線で、これは環状運転
+そのものの性質上、駅の並び順だけでは向き・区間が一意に決まらないため、
+route_builder.py 側で config の stations 配列(明示的な停車順)を必須に
+している(データの品質問題ではない)。
 """
 import math
 import shapefile
 
-DEFAULT_SHP_PATH = "data/stations_shp/tokyo_stations"
+DEFAULT_SHP_PATH = "data/stations_shp/kansai_stations"
 
 
 def haversine_km(a, b):

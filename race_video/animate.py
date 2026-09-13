@@ -166,14 +166,18 @@ def draw_caption(canvas_rgba, text, speaker, color, alpha=255):
     canvas_rgba.alpha_composite(layer)
 
 
-def draw_scoreboard(canvas_rgba, route_list, motions, real_mins):
+def draw_scoreboard(canvas_rgba, route_list, motions, real_mins, bar_top=None):
     layer = Image.new("RGBA", canvas_rgba.size, (0, 0, 0, 0))
     d = ImageDraw.Draw(layer)
     f_name = font(FONT_BOLD, 30)
     f_time = font(FONT_BLACK, 30, index=0)
     bar_x0, bar_x1 = 230, 820
-    row_ys = [1810, 1880] if len(route_list) <= 2 else \
-        [1780 + i * 50 for i in range(len(route_list))]
+    gap = 70 if len(route_list) <= 2 else 50
+    if bar_top is None:
+        row_ys = [1795, 1865] if len(route_list) <= 2 else \
+            [1765 + i * 50 for i in range(len(route_list))]
+    else:
+        row_ys = [bar_top + i * gap for i in range(len(route_list))]
     for route, y in zip(route_list, row_ys):
         color = tuple(route["color"])
         m = motions[route["key"]]
@@ -276,6 +280,23 @@ def render(config, paths, base_map_rgba, proj, out_dir="output", frames_dir="fra
     result_start = max(m.total_min for m in motions.values()) * ratio + intro_sec + 1.0
     color_by_key = {r["key"]: tuple(r["color"]) for r in route_list}
 
+    # プログレスバーの表示位置: 路線の描画がコンパクトで画面上部〜中央寄りに
+    # 収まっている場合ほど、路線のすぐ下(+少し余白)まで詰める。
+    # ・字幕(caption)帯(y=1690〜1770)を焼き込む設定のときは、そこと
+    #   重ならない位置まで下げる。
+    # ・どちらの場合も、従来の固定位置より「さらに下」にはしない
+    #   (詰める方向にのみ動く安全な調整)。
+    n_routes = len(route_list)
+    default_bar_top = 1795 if n_routes <= 2 else 1765
+    content_bottom_y = proj.get("content_bottom_y")
+    if content_bottom_y is None:
+        bar_top = None
+    else:
+        bar_top = content_bottom_y + 50
+        if show_captions:
+            bar_top = max(bar_top, 1770 + 25)
+        bar_top = min(bar_top, default_bar_top)
+
     for fi in range(n_frames):
         t = fi / fps
         canvas = base_map_rgba.copy()
@@ -304,7 +325,7 @@ def render(config, paths, base_map_rgba, proj, out_dir="output", frames_dir="fra
                 if 0 <= elapsed <= 1.6:
                     draw_popup(canvas, proj, st, elapsed, color_by_key[r["key"]])
 
-        draw_scoreboard(canvas, route_list, motions, real_mins)
+        draw_scoreboard(canvas, route_list, motions, real_mins, bar_top=bar_top)
 
         if show_captions:
             for ev in timeline:

@@ -17,6 +17,6 @@ COPY . .
 # 簡易Webページ(web/app.py)が起動する。PORT環境変数はRenderが自動で
 # 渡してくれる(未設定時は8080)。
 # ローカルでCLIから直接1本だけ生成したい場合は、このCMDの代わりに
-# 例えば `python3 -m race_video.cli configs/shinjuku_fujisawa.json` を
+# 例えば `python3 -m race_video.cli configs/osaka_kyoto.json` を
 # 直接実行してください。
 CMD ["python3", "web/app.py"]

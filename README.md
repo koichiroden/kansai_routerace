@@ -1,14 +1,16 @@
-# 電車最速バトル動画ジェネレーター (train-route-race-video)
+# 電車最速バトル動画ジェネレーター 関西版 (train-route-race-video-kansai)
 
-首都圏の路線図データ(GeoJSON/駅データSHP)を使って、「A駅からB駅まで、
-どの路線が一番速いか」を比較する縦動画(1080x1920, ショート動画向け)を
-自動生成するツールです。地図上で2つの路線が実際のルート形状に沿って
-レースし、通過駅ポップアップ・スコアボード・競馬実況風のテロップ、
-実況台本(.txt / .srt)まで一括で作ります。
+関西圏の路線図データ(GeoJSON/駅データSHP、JR西日本・阪急・阪神・京阪・
+近鉄・南海・Osaka Metro 計40路線)を使って、「A駅からB駅まで、どの路線が
+一番速いか」を比較する縦動画(1080x1920, ショート動画向け)を自動生成する
+ツールです。地図上で2つの路線が実際のルート形状に沿ってレースし、通過駅
+ポップアップ・スコアボード・競馬実況風のテロップ、実況台本(.txt / .srt)
+まで一括で作ります。
 
-新宿→藤沢(小田急線 vs JR湘南新宿ライン)の比較動画を題材に作りましたが、
-`configs/*.json` を書けば**どの2駅・どの路線の組み合わせでも**汎用的に
-使えるように設計してあります。
+本リポジトリは首都圏版(train-route-race-video)と同じ仕組みを、関西の
+路線データに差し替えた独立版です。大阪→京都(JR京都線 新快速 vs 阪急
+京都線 特急)の比較動画を題材に作りましたが、`configs/*.json` を書けば
+**どの2駅・どの路線の組み合わせでも**汎用的に使えるように設計してあります。
 
 ## できること
 
@@ -24,7 +26,7 @@
 
 ```bash
 git clone <このリポジトリのURL>
-cd train-route-race-video
+cd train-route-race-video-kansai
 
 # Python依存パッケージ
 pip install -r requirements.txt
@@ -45,14 +47,18 @@ macOSの場合は `brew install ffmpeg` と、日本語フォントは標準搭�
 
 ```bash
 # 動画生成(30fps, フル画質)
-python3 -m race_video.cli configs/shinjuku_fujisawa.json
+python3 -m race_video.cli configs/osaka_kyoto.json
 
 # 低fpsの高速プレビュー(内容確認用、10fps)
-python3 -m race_video.cli configs/shinjuku_fujisawa.json --fast
+python3 -m race_video.cli configs/osaka_kyoto.json --fast
 
 # 駅データSHPの品質だけチェックしたいとき
-python3 -m race_video.cli configs/shinjuku_fujisawa.json --check-stations
+python3 -m race_video.cli configs/osaka_kyoto.json --check-stations
 ```
+
+`--geojson` / `--shp` のデフォルトはこのリポジトリの関西データ
+(`data/routes.geojson` / `data/stations_shp/kansai_stations`)を指す
+ようになっているので、通常はオプション指定なしでそのまま使えます。
 
 生成物は `output/` に出力されます:
 
@@ -64,29 +70,29 @@ python3 -m race_video.cli configs/shinjuku_fujisawa.json --check-stations
 ## 他のルートを追加する方法(汎用化のポイント)
 
 新しい比較動画を作るには `configs/` に新しいJSONを1つ足すだけです。
-`configs/shinjuku_fujisawa.json` をコピーして書き換えてください。
+`configs/osaka_kyoto.json` をコピーして書き換えてください。
 
 ```jsonc
 {
-  "slug": "shibuya_yokohama",              // 出力ファイル名に使われる
-  "title_line1": "渋谷 → 横浜",
+  "slug": "umeda_sannomiya",                // 出力ファイル名に使われる
+  "title_line1": "大阪梅田 → 神戸三宮",
   "title_line2": "どっちが早い!? 電車最速バトル",
-  "start_name": "渋谷",
-  "end_label": "横浜",
-  "compress_sec_per_min": 0.5,             // 実1分を動画何秒に圧縮するか
+  "start_name": "大阪梅田",
+  "end_label": "神戸三宮",
+  "compress_sec_per_min": 0.5,              // 実1分を動画何秒に圧縮するか
   "intro_sec": 2.0,
   "outro_hold_sec": 4.0,
   "routes": [
     {
-      "key": "route_a",                    // ルートを識別するキー(a/bなど)
-      "name": "東急東横線",
-      "short_name": "東急東横線",           // スコアボード等で使う短縮名
+      "key": "route_a",                     // ルートを識別するキー(a/bなど)
+      "name": "阪神本線(直通特急)",
+      "short_name": "阪神特急",
       "color": [230, 20, 20],
-      "icon_path": "assets/toyoko_icon.png", // 省略可(無ければ簡易アイコン)
+      "icon_path": "assets/hanshin_icon.png", // 省略可(無ければ簡易アイコン)
       "stations": [
-        {"line": "東急東横線", "name": "渋谷", "t_min": 0,  "popup": true},
-        {"line": "東急東横線", "name": "武蔵小杉", "t_min": 12, "popup": true},
-        {"line": "東急東横線", "name": "横浜", "t_min": 26, "popup": true}
+        {"line": "阪神本線", "name": "大阪梅田", "t_min": 0,  "popup": true},
+        {"line": "阪神本線", "name": "尼崎", "t_min": 8, "popup": true},
+        {"line": "阪神本線", "name": "神戸三宮", "t_min": 27, "popup": true}
       ]
     },
     { "key": "route_b", "name": "...", "stations": [ ... ] }
@@ -109,55 +115,53 @@ python3 -m race_video.cli configs/shinjuku_fujisawa.json --check-stations
 対象にもなります(あまり多いと画面が窮屈になるので、主要駅だけ絞るのが
 おすすめです)。
 
-## configを手入力で作るツール(config builder)
+## configを手入力で作るツール(駅レースビルダー 関西版)
 
-`configs/*.json` を手で書く代わりに、`tools/config_builder.html` を
-ブラウザで直接開く(ダブルクリックでOK、サーバー不要)と、GUIで
-ルートを組み立てられます。
+`configs/*.json` を手で書く代わりに、Claude Artifactとして公開している
+「駅レースビルダー(関西版)」( https://claude.ai/code/artifact/f4ac11c3-4c0e-4020-94ee-57de71c7b3e0 )
+をブラウザで開くと、GUIでルートを組み立てられます。
 
 - ルートごとに路線区間を追加(通常の路線は始点駅・終点駅を選ぶだけ、
-  並び順が信頼できない路線は駅を1つずつ選ぶ手動モードに自動で切り替わります)
+  大阪環状線のような駅の並び順が一意に決まらない路線は、あらかじめ
+  用意された系統プリセットから範囲選択するか、駅を1つずつ選ぶ手動モードに
+  自動で切り替わります)
 - 組み立てた駅の一覧から、動画にポップアップ表示したい駅にチェック
 - 各駅までの所要時間(分)を手入力(乗換案内サイト等で調べた実データを想定)
 - 乗換駅・直通運転駅にはメモを添えられる
 - 「JSONを保存」でそのまま `configs/<slug>.json` として使えるファイルを
   書き出し(保存に失敗する環境ではクリップボードへコピーします)
 
-開いた時点で新宿→藤沢の例が読み込まれた状態になっているので、まずは
+開いた時点で大阪→京都の例が読み込まれた状態になっているので、まずは
 それを編集しながら使い方を確認してみてください。入力内容はブラウザの
 localStorageに自動保存されるので、リロードしても失われません
-(「サンプルに戻す」で新宿→藤沢の例にリセットできます)。
+(「サンプルに戻す」で大阪→京都の例にリセットできます)。
 
 ## 経路データのクリーニングについて
 
 `routes.geojson` には、複数の物理経路をデータ生成時に結合した際の
 継ぎ目と見られる「同じ地点を一瞬だけ往復してしまう」重複区間が、ごく
-一部の路線(例: 湘南新宿ラインの横浜駅付近)に混入していました。放置すると
+一部の路線に混入することがあります。放置すると
 動画中で車両アイコンが一瞬だけ後ろに戻って見えてしまうため、
 `race_video/route_builder.py` の `remove_backtracking()` が、経路を
 組み立てるたびに自動でこの種の重複・孤立ノイズ頂点を取り除きます
 (本物の急カーブは区別して残します)。特定の路線に対する特別扱いでは
 なく、どの区間を組み合わせても同じロジックが適用されます。
 
-## 「東海道本線」「高崎線」「宇都宮線」のような愛称路線について
+## 「大阪環状線」のようなループ路線について
 
-駅データ(`data/stations_shp`)には「東海道本線」「高崎線」「宇都宮線」という
-路線名は存在せず、これらの区間はすべて「上野東京ライン」という1つの路線名の
-中に(複数の系統が混線した状態で)含まれています。そのため config の
-`"line"` にこれらの名前を書いても、実データ上は見つかりません。
+大阪環状線は始発・終着が同じ駅(大阪)に戻ってくる環状運転のため、
+「駅の並び順」だけでは向き・区間が一意に決まりません。そのため
+`race_video/route_builder.py` の `LOOP_LINES` にこの路線を登録して、
+経路のノイズ除去ロジック(`collapse_revisits`。本来は同一地点を一瞬だけ
+往復してしまうデータ上のノイズを畳み込むためのもの)が環状区間そのものを
+誤って削ってしまわないようにしています。
 
-`race_video/route_builder.py` の `LINE_ALIASES` が、これらの愛称を実際に
-座標・線形データを持つ路線名(上野東京ライン)に自動変換してから駅位置・
-線形を引くので、config 上は気にせず `"東海道本線"` `"高崎線"` `"宇都宮線"`
-と書いて構いません(表示名としてもそのまま使われます)。config builder
-(駅レースビルダー)側にも、この3路線は駅の並び順が確定した状態
-(範囲選択できる清潔な路線)としてあらかじめ登録してあります。
-
-同様の理由で「常磐線」「埼京線」はすでに単独の路線として正しい並び順で
-登録されています。「湘南新宿ライン」「上野東京ライン」自体は複数系統が
-分岐・合流する関係で並び順が一意に決まらないため、config builder では
-引き続き駅を手動で順番に指定する方式(プリセットからまとめて読み込み、
-不要な駅を削除するのがおすすめ)を使います。
+config の `"line"` に `"大阪環状線"` を使う場合は、他の路線のように
+始点駅・終点駅だけを指定するのではなく、`stations` 配列に実際に停車する
+順番をすべて明示的に書いてください(`configs/` のサンプルや、駅レース
+ビルダー側の系統プリセットが実例です)。それ以外の39路線は駅の並び順が
+一意に決まる通常の路線なので、始点駅・終点駅を指定するだけで間の駅が
+自動的に埋まります。
 
 ## 途中駅の所要時間(t_min)を空欄にする
 
@@ -170,26 +174,18 @@ localStorageに自動保存されるので、リロードしても失われま�
 
 ## データについて
 
-- `data/routes.geojson` … 首都圏52路線の線形状(LineString/MultiLineString)
-- `data/stations_shp/tokyo_stations.*` … 61路線分の駅データ(Shapefile。
+- `data/routes.geojson` … 関西40路線(JR西日本・阪急・阪神・京阪・近鉄・
+  南海・Osaka Metro)の線形状(LineString/MultiLineString)
+- `data/stations_shp/kansai_stations.*` … 40路線分の駅データ(Shapefile。
   フィールドは `line_name, stn_name, seq, cum_km, color`)
 
 ### 既知の注意点(駅データSHPの品質)
 
 `python3 -m race_video.cli <config> --check-stations` で全路線の品質を
-チェックできます。61路線中59路線は駅の並び順(seq)・距離(cum_km)・座標が
-正確でしたが、以下の2路線だけ複数の物理系統(例: 小田原方面と宇都宮方面)
-の駅が1本のseq/cum_kmに混線しており、**並び順をそのまま信用できません**
-(駅名→座標の対応自体は正しいので、座標の引き当てには使えます)。
-
-- 湘南新宿ライン
-- 上野東京ライン
-
-原因は、これらの路線が `routes.geojson` 上でMultiLineString(=複数の
-物理系統に分かれた線形状)になっており、系統をまたいで駅が最近傍の
-頂点にマッチングされてしまったためと推測されます。この2路線を経路に
-含める場合は、本ツールの設計どおり `stations` 配列で実際の停車順を
-明示的に指定してください(`configs/shinjuku_fujisawa.json` のJR側が実例です)。
+チェックできます。関西40路線はいずれも駅の並び順(seq)・距離(cum_km)・
+座標に問題は見つかっていません。唯一の例外は前述の大阪環状線で、これは
+データの品質問題ではなく環状運転そのものの性質上、config側で停車順を
+明示する必要がある、という点にご注意ください。
 
 将来的にSHP生成スクリプト側を直すなら、「系統(LineStringのセグメント)
 ごとに」駅を割り当て直す形にすると、この2路線も自動生成に使えるように

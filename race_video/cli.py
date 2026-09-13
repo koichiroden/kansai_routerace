@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 """
 使い方:
-    python -m race_video.cli configs/shinjuku_fujisawa.json
-    python -m race_video.cli configs/shinjuku_fujisawa.json --fast   # 低fpsプレビュー
+    python -m race_video.cli configs/osaka_kyoto.json
+    python -m race_video.cli configs/osaka_kyoto.json --fast   # 低fpsプレビュー
 
-configファイルの書き方は configs/shinjuku_fujisawa.json と README を参照。
+configファイルの書き方は configs/osaka_kyoto.json と README を参照。
 """
 import argparse
 import json
@@ -20,7 +20,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("config", help="レース設定JSONのパス")
     ap.add_argument("--geojson", default="data/routes.geojson")
-    ap.add_argument("--shp", default="data/stations_shp/tokyo_stations")
+    ap.add_argument("--shp", default="data/stations_shp/kansai_stations")
     ap.add_argument("--out-dir", default="output")
     ap.add_argument("--frames-dir", default="frames")
     ap.add_argument("--fast", action="store_true", help="10fpsの低画質プレビューを高速生成")

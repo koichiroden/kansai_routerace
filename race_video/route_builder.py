@@ -6,19 +6,20 @@
 config の1ルートは以下の形:
 {
   "key": "route_a",
-  "name": "小田急線",
-  "color": [0,110,235],           # 省略時は station_db の色を使う
+  "name": "阪神本線",
+  "color": [230,20,20],           # 省略時は station_db の色を使う
   "stations": [
-     {"line": "小田急小田原線", "name": "新宿", "t_min": 0, "popup": true},
-     {"line": "小田急小田原線", "name": "登戸", "t_min": 18, "popup": true},
+     {"line": "阪神本線", "name": "大阪梅田", "t_min": 0, "popup": true},
+     {"line": "阪神本線", "name": "尼崎", "t_min": 8, "popup": true},
      ...
-     {"line": "小田急江ノ島線", "name": "藤沢", "t_min": 58, "popup": true,
-      "transfer": true, "transfer_note": "直通(乗換なし)"},
+     {"line": "阪神本線", "name": "神戸三宮", "t_min": 27, "popup": true},
   ]
 }
 駅の並び順(= どの駅をどの順で通るか)は、この stations 配列の順序で明示的に
-指定する。station_db 側のseq/cum_kmが壊れている路線(湘南新宿ラインなど)
-でも、駅名->座標の引き当てさえ合っていれば問題なく使える。
+指定する。station_db 側のseq/cum_kmが壊れている路線があっても、
+駅名->座標の引き当てさえ合っていれば問題なく使える(関西40路線では
+そうした問題は見つかっていないが、環状運転の大阪環状線だけは駅の並び順
+だけでは向き・区間が一意に決まらないため、常にこの明示指定が必要)。
 
 各駅の "line" が routes.geojson に無い路線名の場合(駅データSHPには
 あるが線形状データが無い路線)は、前後の駅を直線で結ぶフォールバックになる。
@@ -35,15 +36,12 @@ BACKTRACK_BEARING_DEG = 120
 
 # station_db / routes.geojson には存在しない「愛称レベル」の路線名を、
 # 実際に座標・線形データを持つ路線名に読み替えるための対応表。
-# 例: 東海道本線・高崎線・宇都宮線は、駅データ上は全て「上野東京ライン」
-# という1つの(複数系統が混線した)路線名の中に含まれているので、
-# configで "line": "東海道本線" のように書かれた場合はここで
-# "上野東京ライン" に変換してから座標・線形を引く。
-LINE_ALIASES = {
-    "東海道本線": "上野東京ライン",
-    "高崎線": "上野東京ライン",
-    "宇都宮線": "上野東京ライン",
-}
+# (例: ある路線の一部区間だけが別の愛称で呼ばれていて、駅データ上は
+# もう1つの路線名の中に混線して含まれている、というようなケース)
+# 関西40路線は現状すべて実際の登録路線名のままconfigに書けば見つかるので、
+# このリポジトリでは空のままにしてある。将来そうした愛称路線を追加する
+# 場合はここに追記する。
+LINE_ALIASES = {}
 
 
 def resolve_line_name(line_name):
@@ -453,7 +451,7 @@ def build_all_routes(config, geojson_path="data/routes.geojson",
 
 if __name__ == "__main__":
     import sys
-    cfg_path = sys.argv[1] if len(sys.argv) > 1 else "configs/shinjuku_fujisawa.json"
+    cfg_path = sys.argv[1] if len(sys.argv) > 1 else "configs/osaka_kyoto.json"
     with open(cfg_path, encoding="utf-8") as f:
         config = json.load(f)
     paths, warnings = build_all_routes(config)
