@@ -1,0 +1,384 @@
+{
+  "slug": "shinimamiya_kanku",
+  "title_line1": "新今宮→関空",
+  "title_line2": "どっちが早い？電車最速バトル",
+  "start_name": "新今宮",
+  "end_label": "関西空港",
+  "video_duration_sec": 30,
+  "intro_sec": 2,
+  "outro_hold_sec": 4,
+  "routes": [
+    {
+      "key": "route_a",
+      "name": "JR関空快速",
+      "short_name": "JR",
+      "color": [
+        30,
+        231,
+        246
+      ],
+      "stations": [
+        {
+          "line": "大阪環状線",
+          "name": "新今宮",
+          "t_min": 0,
+          "popup": true
+        },
+        {
+          "line": "大阪環状線",
+          "name": "天王寺",
+          "t_min": 2,
+          "popup": true
+        },
+        {
+          "line": "阪和線",
+          "name": "美章園",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "阪和線",
+          "name": "南田辺",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "阪和線",
+          "name": "鶴ケ丘",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "阪和線",
+          "name": "長居",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "阪和線",
+          "name": "我孫子町",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "阪和線",
+          "name": "杉本町",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "阪和線",
+          "name": "浅香",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "阪和線",
+          "name": "堺市",
+          "t_min": 12,
+          "popup": true
+        },
+        {
+          "line": "阪和線",
+          "name": "三国ケ丘",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "阪和線",
+          "name": "百舌鳥",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "阪和線",
+          "name": "上野芝",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "阪和線",
+          "name": "津久野",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "阪和線",
+          "name": "鳳",
+          "t_min": 19,
+          "popup": true
+        },
+        {
+          "line": "阪和線",
+          "name": "富木",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "阪和線",
+          "name": "北信太",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "阪和線",
+          "name": "信太山",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "阪和線",
+          "name": "和泉府中",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "阪和線",
+          "name": "久米田",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "阪和線",
+          "name": "下松",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "阪和線",
+          "name": "東岸和田",
+          "t_min": 32,
+          "popup": true
+        },
+        {
+          "line": "阪和線",
+          "name": "東貝塚",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "阪和線",
+          "name": "和泉橋本",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "阪和線",
+          "name": "東佐野",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "阪和線",
+          "name": "熊取",
+          "t_min": 37,
+          "popup": true
+        },
+        {
+          "line": "阪和線",
+          "name": "日根野",
+          "t_min": 40,
+          "popup": true
+        },
+        {
+          "line": "関西空港線",
+          "name": "りんくうタウン",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "関西空港線",
+          "name": "関西空港",
+          "t_min": 52,
+          "popup": true
+        }
+      ]
+    },
+    {
+      "key": "route_b",
+      "name": "南海急行",
+      "short_name": "南海",
+      "color": [
+        7,
+        65,
+        237
+      ],
+      "stations": [
+        {
+          "line": "南海本線",
+          "name": "新今宮",
+          "t_min": 0,
+          "popup": true
+        },
+        {
+          "line": "南海本線",
+          "name": "天下茶屋",
+          "t_min": 2,
+          "popup": true
+        },
+        {
+          "line": "南海本線",
+          "name": "岸里玉出",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "南海本線",
+          "name": "粉浜",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "南海本線",
+          "name": "住吉大社",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "南海本線",
+          "name": "住ノ江",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "南海本線",
+          "name": "七道",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "南海本線",
+          "name": "堺",
+          "t_min": 9,
+          "popup": true
+        },
+        {
+          "line": "南海本線",
+          "name": "湊",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "南海本線",
+          "name": "石津川",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "南海本線",
+          "name": "諏訪ノ森",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "南海本線",
+          "name": "浜寺公園",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "南海本線",
+          "name": "羽衣",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "南海本線",
+          "name": "高石",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "南海本線",
+          "name": "北助松",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "南海本線",
+          "name": "松ノ浜",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "南海本線",
+          "name": "泉大津",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "南海本線",
+          "name": "忠岡",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "南海本線",
+          "name": "春木",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "南海本線",
+          "name": "和泉大宮",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "南海本線",
+          "name": "岸和田",
+          "t_min": 24,
+          "popup": true
+        },
+        {
+          "line": "南海本線",
+          "name": "蛸地蔵",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "南海本線",
+          "name": "貝塚",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "南海本線",
+          "name": "二色浜",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "南海本線",
+          "name": "鶴原",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "南海本線",
+          "name": "井原里",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "南海本線",
+          "name": "泉佐野",
+          "t_min": 32,
+          "popup": true
+        },
+        {
+          "line": "南海空港線",
+          "name": "りんくうタウン",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "南海空港線",
+          "name": "関西空港",
+          "t_min": 42,
+          "popup": true
+        }
+      ]
+    }
+  ]
+}

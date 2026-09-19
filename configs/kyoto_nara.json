@@ -1,0 +1,324 @@
+{
+  "slug": "kyoto_nara",
+  "title_line1": "京都→奈良",
+  "title_line2": "どっちが早い？電車最速バトル",
+  "start_name": "京都",
+  "end_label": "奈良",
+  "video_duration_sec": 30,
+  "intro_sec": 2,
+  "outro_hold_sec": 4,
+  "routes": [
+    {
+      "key": "route_a",
+      "name": "JR奈良線みやこ路快速",
+      "short_name": "JR",
+      "color": [
+        30,
+        246,
+        95
+      ],
+      "stations": [
+        {
+          "line": "奈良線",
+          "name": "京都",
+          "t_min": 0,
+          "popup": true
+        },
+        {
+          "line": "奈良線",
+          "name": "東福寺",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "奈良線",
+          "name": "稲荷",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "奈良線",
+          "name": "JR藤森",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "奈良線",
+          "name": "桃山",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "奈良線",
+          "name": "六地蔵",
+          "t_min": 11,
+          "popup": true
+        },
+        {
+          "line": "奈良線",
+          "name": "木幡",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "奈良線",
+          "name": "黄檗",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "奈良線",
+          "name": "宇治",
+          "t_min": 17,
+          "popup": true
+        },
+        {
+          "line": "奈良線",
+          "name": "JR小倉",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "奈良線",
+          "name": "新田",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "奈良線",
+          "name": "城陽",
+          "t_min": 25,
+          "popup": true
+        },
+        {
+          "line": "奈良線",
+          "name": "長池",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "奈良線",
+          "name": "山城青谷",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "奈良線",
+          "name": "山城多賀",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "奈良線",
+          "name": "玉水",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "奈良線",
+          "name": "棚倉",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "奈良線",
+          "name": "上狛",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "奈良線",
+          "name": "木津",
+          "t_min": 40,
+          "popup": true
+        },
+        {
+          "line": "奈良線",
+          "name": "奈良",
+          "t_min": 47,
+          "popup": true
+        }
+      ]
+    },
+    {
+      "key": "route_b",
+      "name": "近鉄京都線急行",
+      "short_name": "近鉄",
+      "color": [
+        237,
+        7,
+        42
+      ],
+      "stations": [
+        {
+          "line": "近鉄京都線",
+          "name": "京都",
+          "t_min": 0,
+          "popup": true
+        },
+        {
+          "line": "近鉄京都線",
+          "name": "東寺",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "近鉄京都線",
+          "name": "十条",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "近鉄京都線",
+          "name": "上鳥羽口",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "近鉄京都線",
+          "name": "竹田",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "近鉄京都線",
+          "name": "伏見",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "近鉄京都線",
+          "name": "近鉄丹波橋",
+          "t_min": 9,
+          "popup": true
+        },
+        {
+          "line": "近鉄京都線",
+          "name": "桃山御陵前",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "近鉄京都線",
+          "name": "向島",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "近鉄京都線",
+          "name": "小倉",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "近鉄京都線",
+          "name": "伊勢田",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "近鉄京都線",
+          "name": "大久保",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "近鉄京都線",
+          "name": "久津川",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "近鉄京都線",
+          "name": "寺田",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "近鉄京都線",
+          "name": "富野荘",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "近鉄京都線",
+          "name": "新田辺",
+          "t_min": 23,
+          "popup": true
+        },
+        {
+          "line": "近鉄京都線",
+          "name": "興戸",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "近鉄京都線",
+          "name": "三山木",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "近鉄京都線",
+          "name": "近鉄宮津",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "近鉄京都線",
+          "name": "狛田",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "近鉄京都線",
+          "name": "新祝園",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "近鉄京都線",
+          "name": "木津川台",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "近鉄京都線",
+          "name": "山田川",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "近鉄京都線",
+          "name": "高の原",
+          "t_min": 34,
+          "popup": true
+        },
+        {
+          "line": "近鉄京都線",
+          "name": "平城",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "近鉄京都線",
+          "name": "大和西大寺",
+          "t_min": 42,
+          "popup": true
+        },
+        {
+          "line": "近鉄奈良線",
+          "name": "新大宮",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "近鉄奈良線",
+          "name": "近鉄奈良",
+          "t_min": 45,
+          "popup": true
+        }
+      ]
+    }
+  ]
+}

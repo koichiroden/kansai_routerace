@@ -1,37 +1,557 @@
 {
   "slug": "osaka_kyoto",
-  "title_line1": "大阪 → 京都",
-  "title_line2": "どっちが早い!? 電車最速バトル",
-  "start_name": "大阪",
-  "end_label": "京都",
-  "compress_sec_per_min": 0.6,
-  "intro_sec": 2.0,
-  "outro_hold_sec": 4.0,
+  "title_line1": "大阪→京都",
+  "title_line2": "どっちが早い？電車最速バトル",
+  "start_name": "大阪・梅田・淀屋橋",
+  "end_label": "京都・河原町・三条",
+  "video_duration_sec": 30,
+  "intro_sec": 2,
+  "outro_hold_sec": 4,
   "routes": [
     {
       "key": "route_a",
-      "name": "JR京都線(新快速)",
+      "name": "JR新快速",
       "short_name": "JR新快速",
-      "color": [246, 139, 30],
+      "color": [
+        30,
+        44,
+        246
+      ],
       "stations": [
-        {"line": "JR京都線", "name": "大阪", "t_min": 0, "popup": true},
-        {"line": "JR京都線", "name": "新大阪", "t_min": 4, "popup": false},
-        {"line": "JR京都線", "name": "高槻", "t_min": 17, "popup": true},
-        {"line": "JR京都線", "name": "長岡京", "t_min": 24, "popup": false},
-        {"line": "JR京都線", "name": "京都", "t_min": 28, "popup": true}
+        {
+          "line": "JR京都線",
+          "name": "大阪",
+          "t_min": 0,
+          "popup": true
+        },
+        {
+          "line": "JR京都線",
+          "name": "新大阪",
+          "t_min": 4,
+          "popup": true
+        },
+        {
+          "line": "JR京都線",
+          "name": "東淀川",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "JR京都線",
+          "name": "吹田",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "JR京都線",
+          "name": "岸辺",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "JR京都線",
+          "name": "千里丘",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "JR京都線",
+          "name": "茨木",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "JR京都線",
+          "name": "JR総持寺",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "JR京都線",
+          "name": "摂津富田",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "JR京都線",
+          "name": "高槻",
+          "t_min": 15,
+          "popup": true
+        },
+        {
+          "line": "JR京都線",
+          "name": "島本",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "JR京都線",
+          "name": "山崎",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "JR京都線",
+          "name": "長岡京",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "JR京都線",
+          "name": "向日町",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "JR京都線",
+          "name": "桂川",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "JR京都線",
+          "name": "西大路",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "JR京都線",
+          "name": "京都",
+          "t_min": 29,
+          "popup": true
+        }
       ]
     },
     {
       "key": "route_b",
-      "name": "阪急京都線(特急)",
-      "short_name": "阪急特急",
-      "color": [143, 36, 105],
+      "name": "阪急",
+      "short_name": "阪急",
+      "color": [
+        143,
+        36,
+        105
+      ],
       "stations": [
-        {"line": "阪急京都線", "name": "大阪梅田", "t_min": 0, "popup": true},
-        {"line": "阪急京都線", "name": "十三", "t_min": 3, "popup": false},
-        {"line": "阪急京都線", "name": "茨木市", "t_min": 20, "popup": true},
-        {"line": "阪急京都線", "name": "長岡天神", "t_min": 33, "popup": false},
-        {"line": "阪急京都線", "name": "京都河原町", "t_min": 43, "popup": true}
+        {
+          "line": "阪急京都線",
+          "name": "大阪梅田",
+          "t_min": 0,
+          "popup": true
+        },
+        {
+          "line": "阪急京都線",
+          "name": "十三",
+          "t_min": 3,
+          "popup": true
+        },
+        {
+          "line": "阪急京都線",
+          "name": "南方",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "阪急京都線",
+          "name": "崇禅寺",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "阪急京都線",
+          "name": "淡路",
+          "t_min": 8,
+          "popup": true
+        },
+        {
+          "line": "阪急京都線",
+          "name": "上新庄",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "阪急京都線",
+          "name": "相川",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "阪急京都線",
+          "name": "正雀",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "阪急京都線",
+          "name": "摂津市",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "阪急京都線",
+          "name": "南茨木",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "阪急京都線",
+          "name": "茨木市",
+          "t_min": 17,
+          "popup": true
+        },
+        {
+          "line": "阪急京都線",
+          "name": "総持寺",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "阪急京都線",
+          "name": "富田",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "阪急京都線",
+          "name": "高槻市",
+          "t_min": 21,
+          "popup": true
+        },
+        {
+          "line": "阪急京都線",
+          "name": "上牧",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "阪急京都線",
+          "name": "水無瀬",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "阪急京都線",
+          "name": "大山崎",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "阪急京都線",
+          "name": "西山天王山",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "阪急京都線",
+          "name": "長岡天神",
+          "t_min": 29,
+          "popup": true
+        },
+        {
+          "line": "阪急京都線",
+          "name": "西向日",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "阪急京都線",
+          "name": "東向日",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "阪急京都線",
+          "name": "洛西口",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "阪急京都線",
+          "name": "桂",
+          "t_min": 35,
+          "popup": true
+        },
+        {
+          "line": "阪急京都線",
+          "name": "西京極",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "阪急京都線",
+          "name": "西院",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "阪急京都線",
+          "name": "大宮",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "阪急京都線",
+          "name": "烏丸",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "阪急京都線",
+          "name": "京都河原町",
+          "t_min": 43,
+          "popup": true
+        }
+      ]
+    },
+    {
+      "key": "route_bs2t7y",
+      "name": "京阪",
+      "short_name": "京阪",
+      "color": [
+        4,
+        241,
+        51
+      ],
+      "stations": [
+        {
+          "line": "京阪本線・鴨東線",
+          "name": "淀屋橋",
+          "t_min": 0,
+          "popup": true
+        },
+        {
+          "line": "京阪本線・鴨東線",
+          "name": "北浜",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "京阪本線・鴨東線",
+          "name": "天満橋",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "京阪本線・鴨東線",
+          "name": "京橋",
+          "t_min": 7,
+          "popup": true
+        },
+        {
+          "line": "京阪本線・鴨東線",
+          "name": "野江",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "京阪本線・鴨東線",
+          "name": "関目",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "京阪本線・鴨東線",
+          "name": "森小路",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "京阪本線・鴨東線",
+          "name": "千林",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "京阪本線・鴨東線",
+          "name": "滝井",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "京阪本線・鴨東線",
+          "name": "土居",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "京阪本線・鴨東線",
+          "name": "守口市",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "京阪本線・鴨東線",
+          "name": "西三荘",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "京阪本線・鴨東線",
+          "name": "門真市",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "京阪本線・鴨東線",
+          "name": "古川橋",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "京阪本線・鴨東線",
+          "name": "大和田",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "京阪本線・鴨東線",
+          "name": "萱島",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "京阪本線・鴨東線",
+          "name": "寝屋川市",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "京阪本線・鴨東線",
+          "name": "香里園",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "京阪本線・鴨東線",
+          "name": "光善寺",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "京阪本線・鴨東線",
+          "name": "枚方公園",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "京阪本線・鴨東線",
+          "name": "枚方市",
+          "t_min": 21,
+          "popup": true
+        },
+        {
+          "line": "京阪本線・鴨東線",
+          "name": "御殿山",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "京阪本線・鴨東線",
+          "name": "牧野",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "京阪本線・鴨東線",
+          "name": "樟葉",
+          "t_min": 27,
+          "popup": true
+        },
+        {
+          "line": "京阪本線・鴨東線",
+          "name": "橋本",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "京阪本線・鴨東線",
+          "name": "石清水八幡宮",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "京阪本線・鴨東線",
+          "name": "淀",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "京阪本線・鴨東線",
+          "name": "中書島",
+          "t_min": 37,
+          "popup": true
+        },
+        {
+          "line": "京阪本線・鴨東線",
+          "name": "伏見桃山",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "京阪本線・鴨東線",
+          "name": "丹波橋",
+          "t_min": 40,
+          "popup": true
+        },
+        {
+          "line": "京阪本線・鴨東線",
+          "name": "墨染",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "京阪本線・鴨東線",
+          "name": "藤森",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "京阪本線・鴨東線",
+          "name": "龍谷大前深草",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "京阪本線・鴨東線",
+          "name": "伏見稲荷",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "京阪本線・鴨東線",
+          "name": "鳥羽街道",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "京阪本線・鴨東線",
+          "name": "東福寺",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "京阪本線・鴨東線",
+          "name": "七条",
+          "t_min": 46,
+          "popup": true
+        },
+        {
+          "line": "京阪本線・鴨東線",
+          "name": "清水五条",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "京阪本線・鴨東線",
+          "name": "祇園四条",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "京阪本線・鴨東線",
+          "name": "三条",
+          "t_min": 51,
+          "popup": true
+        }
       ]
     }
   ]
