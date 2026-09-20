@@ -11,7 +11,7 @@ import subprocess
 
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
 
-from .geo import project, CANVAS_W, CANVAS_H
+from .geo import project, CANVAS_W, CANVAS_H, SAFE_BOTTOM_Y
 from .motion import RouteMotion
 from .commentary import build_events, write_script_files
 from . import fonts as _fonts
@@ -172,12 +172,14 @@ def draw_scoreboard(canvas_rgba, route_list, motions, real_mins, bar_top=None):
     f_name = font(FONT_BOLD, 30)
     f_time = font(FONT_BLACK, 30, index=0)
     bar_x0, bar_x1 = 230, 820
-    gap = 70 if len(route_list) <= 2 else 50
+    n_routes = len(route_list)
+    gap = 70 if n_routes <= 2 else 50
     if bar_top is None:
-        row_ys = [1795, 1865] if len(route_list) <= 2 else \
-            [1765 + i * 50 for i in range(len(route_list))]
-    else:
-        row_ys = [bar_top + i * gap for i in range(len(route_list))]
+        # render() から bar_top が渡されない呼び出し(単体テスト等)向けの
+        # フォールバック。SAFE_BOTTOM_Y(リールUIのセーフゾーン境界)より
+        # 絶対に下がらない位置を、render() 側と同じ式で逆算する。
+        bar_top = SAFE_BOTTOM_Y - 15 - 15 - gap * (n_routes - 1)
+    row_ys = [bar_top + i * gap for i in range(n_routes)]
     for route, y in zip(route_list, row_ys):
         color = tuple(route["color"])
         m = motions[route["key"]]
@@ -282,19 +284,19 @@ def render(config, paths, base_map_rgba, proj, out_dir="output", frames_dir="fra
 
     # プログレスバーの表示位置: 路線の描画がコンパクトで画面上部〜中央寄りに
     # 収まっている場合ほど、路線のすぐ下(+少し余白)まで詰める。
-    # ・字幕(caption)帯(y=1690〜1770)を焼き込む設定のときは、そこと
-    #   重ならない位置まで下げる。
-    # ・どちらの場合も、従来の固定位置より「さらに下」にはしない
-    #   (詰める方向にのみ動く安全な調整)。
+    # ただし、リールUIのセーフゾーン(画面下端から1/8 = SAFE_BOTTOM_Y より下)
+    # には、どんな場合も絶対にプログレスバーがかからないようにする
+    # (詰める方向にのみ動く安全な調整で、この上限を超えて下げることはない)。
     n_routes = len(route_list)
-    default_bar_top = 1795 if n_routes <= 2 else 1765
+    bar_gap = 70 if n_routes <= 2 else 50
+    # 最終行のテキスト(高さの半分約15px)がSAFE_BOTTOM_Yより上に収まるよう、
+    # 余白15pxを加えて逆算した「これ以上下げられない」上限。
+    default_bar_top = SAFE_BOTTOM_Y - 15 - 15 - bar_gap * (n_routes - 1)
     content_bottom_y = proj.get("content_bottom_y")
     if content_bottom_y is None:
         bar_top = None
     else:
         bar_top = content_bottom_y + 50
-        if show_captions:
-            bar_top = max(bar_top, 1770 + 25)
         bar_top = min(bar_top, default_bar_top)
 
     for fi in range(n_frames):
