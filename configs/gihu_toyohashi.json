@@ -1,0 +1,588 @@
+{
+  "slug": "gihu_toyohashi",
+  "title_line1": "岐阜 → 豊橋",
+  "title_line2": "どっちが早い!?最速バトル",
+  "start_name": "岐阜・名鉄岐阜",
+  "end_label": "豊橋",
+  "video_duration_sec": 30,
+  "intro_sec": 2,
+  "outro_hold_sec": 4,
+  "routes": [
+    {
+      "key": "route_a",
+      "name": "東海道線（特別快速）",
+      "short_name": "JR",
+      "color": [
+        246,
+        139,
+        30
+      ],
+      "stations": [
+        {
+          "line": "JR東海道線(京都~浜松)",
+          "name": "岐阜",
+          "t_min": 0,
+          "popup": true
+        },
+        {
+          "line": "JR東海道線(京都~浜松)",
+          "name": "木曽川",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "JR東海道線(京都~浜松)",
+          "name": "尾張一宮",
+          "t_min": 9,
+          "popup": true
+        },
+        {
+          "line": "JR東海道線(京都~浜松)",
+          "name": "稲沢",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "JR東海道線(京都~浜松)",
+          "name": "清洲",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "JR東海道線(京都~浜松)",
+          "name": "枇杷島",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "JR東海道線(京都~浜松)",
+          "name": "名古屋",
+          "t_min": 21,
+          "popup": true
+        },
+        {
+          "line": "JR東海道線(京都~浜松)",
+          "name": "金山",
+          "t_min": 26,
+          "popup": true
+        },
+        {
+          "line": "JR東海道線(京都~浜松)",
+          "name": "熱田",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "JR東海道線(京都~浜松)",
+          "name": "笠寺",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "JR東海道線(京都~浜松)",
+          "name": "大高",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "JR東海道線(京都~浜松)",
+          "name": "南大高",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "JR東海道線(京都~浜松)",
+          "name": "共和",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "JR東海道線(京都~浜松)",
+          "name": "大府",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "JR東海道線(京都~浜松)",
+          "name": "逢妻",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "JR東海道線(京都~浜松)",
+          "name": "刈谷",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "JR東海道線(京都~浜松)",
+          "name": "野田新町",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "JR東海道線(京都~浜松)",
+          "name": "東刈谷",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "JR東海道線(京都~浜松)",
+          "name": "三河安城",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "JR東海道線(京都~浜松)",
+          "name": "安城",
+          "t_min": 49,
+          "popup": true
+        },
+        {
+          "line": "JR東海道線(京都~浜松)",
+          "name": "西岡崎",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "JR東海道線(京都~浜松)",
+          "name": "岡崎",
+          "t_min": 55,
+          "popup": true
+        },
+        {
+          "line": "JR東海道線(京都~浜松)",
+          "name": "相見",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "JR東海道線(京都~浜松)",
+          "name": "幸田",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "JR東海道線(京都~浜松)",
+          "name": "三ケ根",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "JR東海道線(京都~浜松)",
+          "name": "三河塩津",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "JR東海道線(京都~浜松)",
+          "name": "蒲郡",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "JR東海道線(京都~浜松)",
+          "name": "三河三谷",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "JR東海道線(京都~浜松)",
+          "name": "三河大塚",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "JR東海道線(京都~浜松)",
+          "name": "愛知御津",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "JR東海道線(京都~浜松)",
+          "name": "西小坂井",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "JR東海道線(京都~浜松)",
+          "name": "豊橋",
+          "t_min": 79,
+          "popup": true
+        }
+      ]
+    },
+    {
+      "key": "route_b",
+      "name": "名鉄（快速特急）",
+      "short_name": "名鉄",
+      "color": [
+        233,
+        1,
+        13
+      ],
+      "stations": [
+        {
+          "line": "名鉄名古屋本線",
+          "name": "名鉄岐阜",
+          "t_min": 0,
+          "popup": true
+        },
+        {
+          "line": "名鉄名古屋本線",
+          "name": "加納",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "名鉄名古屋本線",
+          "name": "茶所",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "名鉄名古屋本線",
+          "name": "岐南",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "名鉄名古屋本線",
+          "name": "笠松",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "名鉄名古屋本線",
+          "name": "木曽川堤",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "名鉄名古屋本線",
+          "name": "黒田",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "名鉄名古屋本線",
+          "name": "新木曽川",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "名鉄名古屋本線",
+          "name": "石刀",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "名鉄名古屋本線",
+          "name": "今伊勢",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "名鉄名古屋本線",
+          "name": "名鉄一宮",
+          "t_min": 13,
+          "popup": true
+        },
+        {
+          "line": "名鉄名古屋本線",
+          "name": "妙興寺",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "名鉄名古屋本線",
+          "name": "島氏永",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "名鉄名古屋本線",
+          "name": "国府宮",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "名鉄名古屋本線",
+          "name": "奥田",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "名鉄名古屋本線",
+          "name": "大里",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "名鉄名古屋本線",
+          "name": "新清洲",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "名鉄名古屋本線",
+          "name": "丸ノ内",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "名鉄名古屋本線",
+          "name": "須ヶ口",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "名鉄名古屋本線",
+          "name": "新川橋",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "名鉄名古屋本線",
+          "name": "二ツ杁",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "名鉄名古屋本線",
+          "name": "西枇杷島",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "名鉄名古屋本線",
+          "name": "東枇杷島",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "名鉄名古屋本線",
+          "name": "栄生",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "名鉄名古屋本線",
+          "name": "名鉄名古屋",
+          "t_min": 29,
+          "popup": true
+        },
+        {
+          "line": "名鉄名古屋本線",
+          "name": "山王",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "名鉄名古屋本線",
+          "name": "金山",
+          "t_min": 34,
+          "popup": true
+        },
+        {
+          "line": "名鉄名古屋本線",
+          "name": "神宮前",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "名鉄名古屋本線",
+          "name": "堀田",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "名鉄名古屋本線",
+          "name": "呼続",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "名鉄名古屋本線",
+          "name": "桜",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "名鉄名古屋本線",
+          "name": "本笠寺",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "名鉄名古屋本線",
+          "name": "本星崎",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "名鉄名古屋本線",
+          "name": "鳴海",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "名鉄名古屋本線",
+          "name": "左京山",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "名鉄名古屋本線",
+          "name": "有松",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "名鉄名古屋本線",
+          "name": "中京競馬場前",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "名鉄名古屋本線",
+          "name": "前後",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "名鉄名古屋本線",
+          "name": "豊明",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "名鉄名古屋本線",
+          "name": "富士松",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "名鉄名古屋本線",
+          "name": "一ツ木",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "名鉄名古屋本線",
+          "name": "知立",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "名鉄名古屋本線",
+          "name": "牛田",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "名鉄名古屋本線",
+          "name": "新安城",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "名鉄名古屋本線",
+          "name": "宇頭",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "名鉄名古屋本線",
+          "name": "矢作橋",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "名鉄名古屋本線",
+          "name": "岡崎公園前",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "名鉄名古屋本線",
+          "name": "東岡崎",
+          "t_min": 60,
+          "popup": true
+        },
+        {
+          "line": "名鉄名古屋本線",
+          "name": "男川",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "名鉄名古屋本線",
+          "name": "美合",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "名鉄名古屋本線",
+          "name": "藤川",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "名鉄名古屋本線",
+          "name": "名電山中",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "名鉄名古屋本線",
+          "name": "本宿",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "名鉄名古屋本線",
+          "name": "名電長沢",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "名鉄名古屋本線",
+          "name": "名電赤坂",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "名鉄名古屋本線",
+          "name": "御油",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "名鉄名古屋本線",
+          "name": "国府",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "名鉄名古屋本線",
+          "name": "小田渕",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "名鉄名古屋本線",
+          "name": "伊奈",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "名鉄名古屋本線",
+          "name": "豊橋",
+          "t_min": 81,
+          "popup": true
+        }
+      ]
+    }
+  ]
+}
