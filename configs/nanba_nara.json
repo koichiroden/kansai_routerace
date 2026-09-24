@@ -1,0 +1,294 @@
+{
+  "slug": "nanba_nara",
+  "title_line1": "難波→奈良",
+  "title_line2": "JR快速vs近鉄 電車最速バトル",
+  "start_name": "難波・JR難波",
+  "end_label": "近鉄奈良・奈良",
+  "video_duration_sec": 30,
+  "intro_sec": 2,
+  "outro_hold_sec": 4,
+  "routes": [
+    {
+      "key": "route_a",
+      "name": "JR大和路戦快速",
+      "short_name": "JR",
+      "color": [
+        30,
+        246,
+        134
+      ],
+      "stations": [
+        {
+          "line": "大和路線",
+          "name": "JR難波",
+          "t_min": 0,
+          "popup": true
+        },
+        {
+          "line": "大和路線",
+          "name": "今宮",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "大和路線",
+          "name": "新今宮",
+          "t_min": 3,
+          "popup": true
+        },
+        {
+          "line": "大和路線",
+          "name": "天王寺",
+          "t_min": 6,
+          "popup": true
+        },
+        {
+          "line": "大和路線",
+          "name": "東部市場前",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "大和路線",
+          "name": "平野",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "大和路線",
+          "name": "加美",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "大和路線",
+          "name": "久宝寺",
+          "t_min": 15,
+          "popup": true
+        },
+        {
+          "line": "大和路線",
+          "name": "八尾",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "大和路線",
+          "name": "志紀",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "大和路線",
+          "name": "柏原",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "大和路線",
+          "name": "高井田",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "大和路線",
+          "name": "河内堅上",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "大和路線",
+          "name": "三郷",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "大和路線",
+          "name": "王寺",
+          "t_min": 27,
+          "popup": true
+        },
+        {
+          "line": "大和路線",
+          "name": "法隆寺",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "大和路線",
+          "name": "大和小泉",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "大和路線",
+          "name": "郡山",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "大和路線",
+          "name": "奈良",
+          "t_min": 42,
+          "popup": true
+        }
+      ]
+    },
+    {
+      "key": "route_b",
+      "name": "近鉄快速急行",
+      "short_name": "近鉄",
+      "color": [
+        245,
+        53,
+        5
+      ],
+      "stations": [
+        {
+          "line": "近鉄奈良線",
+          "name": "大阪難波",
+          "t_min": 0,
+          "popup": true
+        },
+        {
+          "line": "近鉄奈良線",
+          "name": "近鉄日本橋",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "近鉄奈良線",
+          "name": "大阪上本町",
+          "t_min": 3,
+          "popup": true
+        },
+        {
+          "line": "近鉄奈良線",
+          "name": "鶴橋",
+          "t_min": 6,
+          "popup": true
+        },
+        {
+          "line": "近鉄奈良線",
+          "name": "今里",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "近鉄奈良線",
+          "name": "布施",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "近鉄奈良線",
+          "name": "河内永和",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "近鉄奈良線",
+          "name": "河内小阪",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "近鉄奈良線",
+          "name": "八戸ノ里",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "近鉄奈良線",
+          "name": "若江岩田",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "近鉄奈良線",
+          "name": "河内花園",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "近鉄奈良線",
+          "name": "東花園",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "近鉄奈良線",
+          "name": "瓢箪山",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "近鉄奈良線",
+          "name": "枚岡",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "近鉄奈良線",
+          "name": "額田",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "近鉄奈良線",
+          "name": "石切",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "近鉄奈良線",
+          "name": "生駒",
+          "t_min": 20,
+          "popup": true
+        },
+        {
+          "line": "近鉄奈良線",
+          "name": "東生駒",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "近鉄奈良線",
+          "name": "富雄",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "近鉄奈良線",
+          "name": "学園前",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "近鉄奈良線",
+          "name": "菖蒲池",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "近鉄奈良線",
+          "name": "大和西大寺",
+          "t_min": 30,
+          "popup": true
+        },
+        {
+          "line": "近鉄奈良線",
+          "name": "新大宮",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "近鉄奈良線",
+          "name": "近鉄奈良",
+          "t_min": 36,
+          "popup": true
+        }
+      ]
+    }
+  ]
+}
