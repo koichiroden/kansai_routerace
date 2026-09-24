@@ -1,0 +1,282 @@
+{
+  "slug": "osaka_tennnoji",
+  "title_line1": "大阪・梅田→天王寺",
+  "title_line2": "どっちが早い？電車最速バトル",
+  "start_name": "大阪・梅田",
+  "end_label": "天王寺",
+  "video_duration_sec": 30,
+  "intro_sec": 2,
+  "outro_hold_sec": 4,
+  "routes": [
+    {
+      "key": "route_a",
+      "name": "大阪環状線内回り（普通）",
+      "short_name": "内回り",
+      "color": [
+        246,
+        127,
+        30
+      ],
+      "stations": [
+        {
+          "line": "大阪環状線",
+          "name": "大阪",
+          "t_min": 0,
+          "popup": true
+        },
+        {
+          "line": "大阪環状線",
+          "name": "福島",
+          "t_min": 2,
+          "popup": true
+        },
+        {
+          "line": "大阪環状線",
+          "name": "野田",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "大阪環状線",
+          "name": "西九条",
+          "t_min": 6,
+          "popup": true
+        },
+        {
+          "line": "大阪環状線",
+          "name": "弁天町",
+          "t_min": 8,
+          "popup": true
+        },
+        {
+          "line": "大阪環状線",
+          "name": "大正",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "大阪環状線",
+          "name": "芦原橋",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "大阪環状線",
+          "name": "今宮",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "大阪環状線",
+          "name": "新今宮",
+          "t_min": 16,
+          "popup": true
+        },
+        {
+          "line": "大阪環状線",
+          "name": "天王寺",
+          "t_min": 18,
+          "popup": true
+        }
+      ]
+    },
+    {
+      "key": "route_b",
+      "name": "大阪環状線外回り（普通）",
+      "short_name": "外回り",
+      "color": [
+        237,
+        23,
+        7
+      ],
+      "stations": [
+        {
+          "line": "大阪環状線",
+          "name": "大阪",
+          "t_min": 0,
+          "popup": true
+        },
+        {
+          "line": "大阪環状線",
+          "name": "天満",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "大阪環状線",
+          "name": "桜ノ宮",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "大阪環状線",
+          "name": "京橋",
+          "t_min": 7,
+          "popup": true
+        },
+        {
+          "line": "大阪環状線",
+          "name": "大阪城公園",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "大阪環状線",
+          "name": "森ノ宮",
+          "t_min": 11,
+          "popup": true
+        },
+        {
+          "line": "大阪環状線",
+          "name": "玉造",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "大阪環状線",
+          "name": "鶴橋",
+          "t_min": 16,
+          "popup": true
+        },
+        {
+          "line": "大阪環状線",
+          "name": "桃谷",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "大阪環状線",
+          "name": "寺田町",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "大阪環状線",
+          "name": "天王寺",
+          "t_min": 22,
+          "popup": true
+        }
+      ]
+    },
+    {
+      "key": "route_x0gj1d",
+      "name": "御堂筋線",
+      "short_name": "御堂筋線",
+      "color": [
+        251,
+        4,
+        4
+      ],
+      "stations": [
+        {
+          "line": "御堂筋線",
+          "name": "梅田",
+          "t_min": 0,
+          "popup": true
+        },
+        {
+          "line": "御堂筋線",
+          "name": "淀屋橋",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "御堂筋線",
+          "name": "本町",
+          "t_min": 5,
+          "popup": true
+        },
+        {
+          "line": "御堂筋線",
+          "name": "心斎橋",
+          "t_min": 7,
+          "popup": true
+        },
+        {
+          "line": "御堂筋線",
+          "name": "なんば",
+          "t_min": 9,
+          "popup": true
+        },
+        {
+          "line": "御堂筋線",
+          "name": "大国町",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "御堂筋線",
+          "name": "動物園前",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "御堂筋線",
+          "name": "天王寺",
+          "t_min": 17,
+          "popup": true
+        }
+      ]
+    },
+    {
+      "key": "route_g42o5v",
+      "name": "ルートD",
+      "short_name": "ルートD",
+      "color": [
+        139,
+        92,
+        246
+      ],
+      "stations": [
+        {
+          "line": "谷町線",
+          "name": "東梅田",
+          "t_min": 0,
+          "popup": true
+        },
+        {
+          "line": "谷町線",
+          "name": "南森町",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "谷町線",
+          "name": "天満橋",
+          "t_min": 5,
+          "popup": true
+        },
+        {
+          "line": "谷町線",
+          "name": "谷町四丁目",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "谷町線",
+          "name": "谷町六丁目",
+          "t_min": 9,
+          "popup": true
+        },
+        {
+          "line": "谷町線",
+          "name": "谷町九丁目",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "谷町線",
+          "name": "四天王寺前夕陽ヶ丘",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "谷町線",
+          "name": "天王寺",
+          "t_min": 14,
+          "popup": true
+        }
+      ]
+    }
+  ]
+}
