@@ -1,0 +1,408 @@
+{
+  "slug": "nagoya_tsu",
+  "title_line1": "名古屋 → 津",
+  "title_line2": "どっちが早い⁈ 電車最速バトル",
+  "start_name": "名古屋",
+  "end_label": "津",
+  "video_duration_sec": 30,
+  "intro_sec": 2,
+  "outro_hold_sec": 4,
+  "routes": [
+    {
+      "key": "route_a",
+      "name": "JR特急南紀",
+      "short_name": "JR",
+      "color": [
+        246,
+        139,
+        30
+      ],
+      "stations": [
+        {
+          "line": "JR関西本線(名古屋~亀山)",
+          "name": "名古屋",
+          "t_min": 0,
+          "popup": true
+        },
+        {
+          "line": "JR関西本線(名古屋~亀山)",
+          "name": "八田",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "JR関西本線(名古屋~亀山)",
+          "name": "春田",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "JR関西本線(名古屋~亀山)",
+          "name": "蟹江",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "JR関西本線(名古屋~亀山)",
+          "name": "永和",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "JR関西本線(名古屋~亀山)",
+          "name": "弥富",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "JR関西本線(名古屋~亀山)",
+          "name": "長島",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "JR関西本線(名古屋~亀山)",
+          "name": "桑名",
+          "t_min": 22,
+          "popup": true
+        },
+        {
+          "line": "JR関西本線(名古屋~亀山)",
+          "name": "朝日",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "JR関西本線(名古屋~亀山)",
+          "name": "富田",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "JR関西本線(名古屋~亀山)",
+          "name": "富田浜",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "JR関西本線(名古屋~亀山)",
+          "name": "四日市",
+          "t_min": 35,
+          "popup": true
+        },
+        {
+          "line": "JR関西本線(名古屋~亀山)",
+          "name": "南四日市",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "JR関西本線(名古屋~亀山)",
+          "name": "河原田",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "伊勢鉄道",
+          "name": "鈴鹿",
+          "t_min": 44,
+          "popup": true
+        },
+        {
+          "line": "伊勢鉄道",
+          "name": "玉垣",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "伊勢鉄道",
+          "name": "鈴鹿サーキット稲生",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "伊勢鉄道",
+          "name": "徳田",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "伊勢鉄道",
+          "name": "中瀬古",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "伊勢鉄道",
+          "name": "伊勢上野",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "伊勢鉄道",
+          "name": "河芸",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "伊勢鉄道",
+          "name": "東一身田",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "伊勢鉄道",
+          "name": "津",
+          "t_min": 58,
+          "popup": true
+        }
+      ]
+    },
+    {
+      "key": "route_b",
+      "name": "近鉄特急",
+      "short_name": "近鉄特急",
+      "color": [
+        153,
+        36,
+        79
+      ],
+      "stations": [
+        {
+          "line": "近鉄名古屋線",
+          "name": "近鉄名古屋",
+          "t_min": 0,
+          "popup": true
+        },
+        {
+          "line": "近鉄名古屋線",
+          "name": "米野",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "近鉄名古屋線",
+          "name": "黄金",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "近鉄名古屋線",
+          "name": "烏森",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "近鉄名古屋線",
+          "name": "近鉄八田",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "近鉄名古屋線",
+          "name": "伏屋",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "近鉄名古屋線",
+          "name": "戸田",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "近鉄名古屋線",
+          "name": "近鉄蟹江",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "近鉄名古屋線",
+          "name": "富吉",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "近鉄名古屋線",
+          "name": "佐古木",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "近鉄名古屋線",
+          "name": "近鉄弥富",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "近鉄名古屋線",
+          "name": "近鉄長島",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "近鉄名古屋線",
+          "name": "桑名",
+          "t_min": 16,
+          "popup": true
+        },
+        {
+          "line": "近鉄名古屋線",
+          "name": "益生",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "近鉄名古屋線",
+          "name": "伊勢朝日",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "近鉄名古屋線",
+          "name": "川越富洲原",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "近鉄名古屋線",
+          "name": "近鉄富田",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "近鉄名古屋線",
+          "name": "霞ヶ浦",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "近鉄名古屋線",
+          "name": "阿倉川",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "近鉄名古屋線",
+          "name": "川原町",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "近鉄名古屋線",
+          "name": "近鉄四日市",
+          "t_min": 27,
+          "popup": true
+        },
+        {
+          "line": "近鉄名古屋線",
+          "name": "新正",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "近鉄名古屋線",
+          "name": "海山道",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "近鉄名古屋線",
+          "name": "塩浜",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "近鉄名古屋線",
+          "name": "北楠",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "近鉄名古屋線",
+          "name": "楠",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "近鉄名古屋線",
+          "name": "長太ノ浦",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "近鉄名古屋線",
+          "name": "箕田",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "近鉄名古屋線",
+          "name": "伊勢若松",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "近鉄名古屋線",
+          "name": "千代崎",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "近鉄名古屋線",
+          "name": "白子",
+          "t_min": 39,
+          "popup": true
+        },
+        {
+          "line": "近鉄名古屋線",
+          "name": "鼓ヶ浦",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "近鉄名古屋線",
+          "name": "磯山",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "近鉄名古屋線",
+          "name": "千里",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "近鉄名古屋線",
+          "name": "豊津上野",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "近鉄名古屋線",
+          "name": "白塚",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "近鉄名古屋線",
+          "name": "高田本山",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "近鉄名古屋線",
+          "name": "江戸橋",
+          "t_min": null,
+          "popup": false
+        },
+        {
+          "line": "近鉄名古屋線",
+          "name": "津",
+          "t_min": 49,
+          "popup": true
+        }
+      ]
+    }
+  ]
+}
